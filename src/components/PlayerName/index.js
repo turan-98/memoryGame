@@ -1,19 +1,16 @@
 import './style.css';
 
-const PlayerName = () => {
+const PlayerName = (content) => {
 
     return `
 
         <div class="player-name">
             <h3>
-                ${namePlayer}
+                ${content}
             </h3>
         </div>
     
     `
-
 }
-
-let namePlayer = "Player 1"
 
 export default PlayerName

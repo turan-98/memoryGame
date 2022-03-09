@@ -11,7 +11,6 @@ const BoardGame = (amountCards) => {
             ${$htmlContent}
         </section>
     `;
-
 }
 
 export default BoardGame;

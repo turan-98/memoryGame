@@ -6,14 +6,18 @@ import PlayerScore from "./src/components/PlayerScore";
 import PlayerName from "./src/components/PlayerName";
 import BoardGame from "./src/components/objects/BoardGame";
 
-const $htmlBoardGame = BoardGame(6);
+
 const $htmlPlayerScore = PlayerScore();
-const $htmlPlayerName = PlayerName();
+
 
 const $root = document.querySelector("#root");
 
-
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
-$root.insertAdjacentHTML("beforeend", $htmlPlayerScore);
-$root.insertAdjacentHTML("beforebegin", $htmlPlayerName);
+$root.insertAdjacentHTML(
+    "beforebegin", 
+        `
+            ${PlayerName('Player1')}
+            ${PlayerName('Player2')}
+            ${BoardGame(6)}
+        `
+    );
 
