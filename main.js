@@ -5,6 +5,7 @@ import "./src/style/elements/base.css";
 import PlayerScore from "./src/components/PlayerScore";
 import PlayerName from "./src/components/PlayerName";
 import BoardGame from "./src/components/objects/BoardGame";
+import ScoreBoard from "./src/components/objects/ScoreBoard";
 
 
 const $htmlPlayerScore = PlayerScore();
@@ -15,8 +16,7 @@ const $root = document.querySelector("#root");
 $root.insertAdjacentHTML(
     "beforebegin", 
         `
-            ${PlayerName('Player1')}
-            ${PlayerName('Player2')}
+            ${ScoreBoard()}
             ${BoardGame(6)}
         `
     );
