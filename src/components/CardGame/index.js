@@ -2,7 +2,7 @@ import "./style.css"
 const CardGame = () => {
     return `
     
-    <article type="button" class="card-game" onclick="flipCard()">
+    <article type="button" class="card-game card-front-back" onclick="flipCard()">
       <div class="flipper">
          <div class="front">
             <img src="src/components/img/logo.png" alt="logo fox"/>
@@ -15,6 +15,5 @@ const CardGame = () => {
     ` 
     
 }
-
 
 export default CardGame;

@@ -8,6 +8,7 @@ import BoardGame from "./src/components/objects/BoardGame";
 import ScoreBoard from "./src/components/objects/ScoreBoard";
 
 
+
 const $htmlPlayerScore = PlayerScore();
 
 
@@ -17,7 +18,7 @@ $root.insertAdjacentHTML(
     "beforebegin", 
         `
             ${ScoreBoard()}
-            ${BoardGame(6)}
+            ${BoardGame(2)}
         `
     );
 
