@@ -1,4 +1,5 @@
 import PlayerName from "../../PlayerName";
+import "./style.css"
 
 const ScoreBoard = () =>{
     return `
