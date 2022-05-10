@@ -3,9 +3,9 @@ import CardGame from "../CardGame";
 const CardFrontBack = () => {
   return `
     
-    <article>
+    <article class="card-front-back">
         ${CardGame()}
-        ${CardGame()}
+        ${CardGame("logo","logo do js")}
     </article>
 
   `;

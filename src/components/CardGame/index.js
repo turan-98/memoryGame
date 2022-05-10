@@ -1,18 +1,11 @@
 import "./style.css"
-const CardGame = () => {
+const CardGame = (icon = 'javascript', alt = 'Logo marca') => {
     return `
     
-    <article type="button" class="card-game card-front-back" onclick="flipCard()">
-      <div class="flipper">
-         <div class="front">
-            <img src="src/components/img/logo.png" alt="logo fox"/>
-         </div>
-         <div class="back">
-            <img src="src/components/img/log.png" alt="logo fox"/>
-         </div>
-      </div>
+    <article class="card-game">
+      <img src="img/${icon}.png" alt="${alt}"/>
     </article>
-    ` 
+    ` ;
     
 }
 

@@ -8,7 +8,7 @@ const BoardGame = (amountCards) => {
     const $htmlContent = $htmlCardFrontBack.repeat(amountCards)
     
     return `
-        <section class="board-game">
+        <section class="board-game centered">
             ${$htmlContent}
         </section>
     `;
