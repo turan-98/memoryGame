@@ -1,5 +1,4 @@
 import CardFrontBack from "../../CardFrontBack";
-import CardGame from "../../CardGame";
 import "./style.css"
 
 const BoardGame = (amountCards) => {
